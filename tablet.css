@@ -1,0 +1,16 @@
+
+menu {
+    position: static;
+    background-color: blue;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -10px;
+}
+
+main div.receita {
+    width: 360px;
+}

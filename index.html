@@ -6,7 +6,9 @@
     <title>Home Cooking</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="monitor.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
 </head>
 <body>
     <header>
@@ -20,8 +22,9 @@
                 <li>Seus Ingredientes</li>
             </ul>
             <div id="mode">
-                <span id="dark" class="material-icons" onclick="changeMode()">brightness_3</span>
-                <span id="bright" class="material-icons" onclick="changeMode()">light_mode</span>
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+
             </div>
 
         </menu>
@@ -29,6 +32,31 @@
     </header>
 
     <main>
+        <div class="receita">
+            <img src="images/coxinha.jpg" alt="Coxinha">
+            <p>Coxinha de frango</p>
+        </div>
+        <div class="receita">
+            <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+            <p>Pão de Queijo</p>
+        </div>
+        <div class="receita">
+            <img src="images/hamburguer.jpg" alt="Hambúrguer">
+            <p>Hambúrguer</p>
+        </div>
+
+        <div class="receita">
+            <img src="images/coxinha.jpg" alt="Coxinha">
+            <p>Coxinha de frango</p>
+        </div>
+        <div class="receita">
+            <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+            <p>Pão de Queijo</p>
+        </div>
+        <div class="receita">
+            <img src="images/hamburguer.jpg" alt="Hambúrguer">
+            <p>Hambúrguer</p>
+        </div>
         <div class="receita">
             <img src="images/coxinha.jpg" alt="Coxinha">
             <p>Coxinha de frango</p>

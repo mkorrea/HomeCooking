@@ -1,36 +1,45 @@
+var lua = document.getElementById('lua');
+var sol = document.getElementById('sol');
+var menu = document.getElementById('menu')
+var open = document.getElementById('openburguer')
+var close = document.getElementById('closeburguer')
+
 function clickMenu() {
-    var menu = document.getElementById('menu')
-    var open = document.getElementById('openburguer')
-    var close = document.getElementById('closeburguer')
-    
-    if (menu.style.left == '4%') { //off
+    if (menu.style.left == '0%') { //off
         open.style.opacity = '1'
         menu.style.left = '-55%'
     } else {      
         open.style.opacity = '0'
-        menu.style.left = '4%'
+        menu.style.left = '0%'
+    } 
+}
+
+let modoEscuro = false;
+function modo() {
+    modoEscuro = !modoEscuro;
+
+    if (modoEscuro) {
+        lua.style.transform = 'rotate(180deg)';
+        lua.style.opacity = '0'
+        sol.style.transform = 'rotate(180deg)';
+        sol.style.opacity = '1'
+
+        open.style.opacity = '1' 
+        close.style.color = 'white'
+        menu.style.backgroundColor = 'var(--darkback)'
+        document.body.style.backgroundColor = 'var(--darkback)'
+    } else {
+        lua.style.transform = 'rotate(0deg)';
+        lua.style.opacity = '1'
+        sol.style.transform = 'rotate(0deg)';
+        sol.style.opacity = '0'
+
+        open.style.opacity = '0'
+        lua.style.color = 'black'
+        close.style.color = 'black'
+        document.body.style.backgroundColor = 'var(--background)'
+        menu.style.backgroundColor = 'rgb(230, 230, 230)'
     }
 }
 
-function changeMode() {
-    var dark = document.getElementById('dark')
-    var bri = document.getElementById('bright')
-    var menu = document.getElementById('menu')
-    var open = document.getElementById('openburguer')
-    var close = document.getElementById('closeburguer')
-    if (dark.style.opacity == '1') {
-        dark.style.opacity = '0'
-        bri.style.opacity = '1'
-        document.body.style.backgroundColor = 'var(--darkback)'
-        menu.style.backgroundColor = 'var(--darkback)'
-        open.style.color = 'white'
-        close.style.color = 'white'
-    } else {
-        dark.style.opacity = '1'
-        bri.style.opacity = '0'
-        document.body.style.backgroundColor = 'var(--background)'
-        menu.style.backgroundColor = 'rgb(230, 230, 230)'
-        open.style.color = 'black'
-        close.style.color = 'black'
-    }
-}
+

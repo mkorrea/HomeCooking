@@ -35,8 +35,6 @@ header #openburguer, #closeburguer {
     cursor: pointer;
     user-select: none;
     z-index: 1;
-    transition: justify .5s;
-    transition-timing-function: ease;
 }
 
 header #openburguer {
@@ -55,15 +53,15 @@ header menu {
     height: 100%;
     margin: -20px;
     padding: 20px;
-    transition: left .4s;
-    transition-timing-function: ease;
-    background-color: rgb(230, 230, 230);
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.241);
-    transition: background-color .2s;
+    background-color: rgb(230, 230, 230);
+    transition-timing-function: ease;
+    transition: left .4s, background-color .2s;
 }
 
 header > menu > ul {
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 header > menu > ul > li {
@@ -83,6 +81,7 @@ header > menu > ul > li {
 
 header div#mode span {
     position: absolute;
+    left: 40px;
     bottom: 58px;
     width: 32px;
     padding: 9px;
@@ -93,15 +92,15 @@ header div#mode span {
     transition: opacity .2s, transform 0.5s;
     transform: rotate(360deg);
 }
-header #mode #dark, #bright {
+header #mode #lua, #sol {
     font-size: 32px;
 }
-#dark {
+#lua {
     opacity: 1;
     transition: transform 0.5s;
     transform: rotate(360deg);
 }
-#bright {
+#sol {
     opacity: 0;
     transition: transform 0.5s;
     transform: rotate(360deg);
@@ -118,6 +117,11 @@ header h1 {
 }
 
 
+.dark-mode {
+    background-color: black;
+}
+
+
 
 
 
@@ -127,15 +131,16 @@ main {
 }
 
 main div.receita {
-    width: 90vw;
-    height: 300px;
+    width: 85vw;
     margin: 15px auto;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(69, 69, 69, 0.27);
     background-color: var(--backtext);
+    transition: width .3s, height .3s ease;
 }
 
 main div.receita img {
+    aspect-ratio: 18/9;
     width: 100%;
     height: 85%;
     border-radius: 10px 10px 0px 0px;
@@ -144,5 +149,4 @@ main div.receita img {
 main div.receita p {
     font-size: 1.3em;
     text-indent: 20px;
-    margin-top: 4px;
 }
