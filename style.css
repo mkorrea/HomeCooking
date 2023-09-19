@@ -11,12 +11,15 @@
     --background: #D9D9D9;
     --titulo: rgb(241, 53, 32);
     --backtext: #ffffff;
+    --subtitulo: rgba(244, 29, 5, 0.993);
+    --darkback: #101013;
 }
 
 
 body {
     background-color: var(--background);
     font-family: Arial, Helvetica, sans-serif;
+    transition: background-color .2s;
 }
 
 header {
@@ -30,6 +33,7 @@ header #openburguer, #closeburguer {
     justify-content: start;
     font-size: 30px;
     cursor: pointer;
+    user-select: none;
     z-index: 1;
     transition: justify .5s;
     transition-timing-function: ease;
@@ -45,7 +49,7 @@ header #closeburguer {
 }
 
 header menu {
-    position: absolute;
+    position: fixed;
     left: -55%;
     width: 50%;
     height: 100%;
@@ -55,6 +59,7 @@ header menu {
     transition-timing-function: ease;
     background-color: rgb(230, 230, 230);
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.241);
+    transition: background-color .2s;
 }
 
 header > menu > ul {
@@ -62,15 +67,44 @@ header > menu > ul {
 }
 
 header > menu > ul > li {
-    margin: 30px 0px;
+    margin: 25px 0px;
     padding: 15px;
     list-style: none;
-    font-size: 1.6em;
+    font-size: 1.9em;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.381);
+    font-family: 'Great Vibes', cursive;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.133);
     background-color: var(--backtext);
-    color: var(--titulo);
+    color: var(--subtitulo);
     cursor: pointer;
+}
+
+header div#mode span {
+    position: absolute;
+    bottom: 58px;
+    width: 32px;
+    padding: 9px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 12px;
+    background-color: rgba(192, 192, 192, 0.439);
+    transition: opacity .2s, transform 0.5s;
+    transform: rotate(360deg);
+}
+header #mode #dark, #bright {
+    font-size: 32px;
+}
+#dark {
+    opacity: 1;
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+#bright {
+    opacity: 0;
+    transition: transform 0.5s;
+    transform: rotate(360deg);
 }
 
 header h1 {
@@ -78,9 +112,15 @@ header h1 {
     justify-content: center;
     align-items: center;
     font-size: 2.4em;
+    user-select: none;
     font-family: 'Great Vibes', cursive;
     color: var(--titulo);
 }
+
+
+
+
+
 
 main {
 
