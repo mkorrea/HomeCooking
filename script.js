@@ -28,7 +28,7 @@ function modo() {
         close.style.color = 'white'
         menu.style.backgroundColor = 'var(--darkback)'
         document.body.style.backgroundColor = 'var(--darkback)'
-    } else {
+    } else if (!modoEscuro) {
         lua.style.transform = 'rotate(0deg)';
         lua.style.opacity = '1'
         sol.style.transform = 'rotate(0deg)';
