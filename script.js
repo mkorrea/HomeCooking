@@ -1,13 +1,13 @@
 function clickMenu() {
     var menu = document.getElementById('menu')
-    var icon = document.getElementById('burguer')
+    var open = document.getElementById('openburguer')
+    var close = document.getElementById('closeburguer')
     
-    if (menu.style.left == '-60%') { //off
-        menu.style.left = '3%'       //on
-        icon.style.left = '27%'
-         
-    } else {                        
-        menu.style.left = '-60%'
-        icon.style.left = '5%'
+    if (menu.style.left == '-55%') { //off
+        menu.style.left = '5%'
+        open.style.opacity = '0'
+    } else {      
+        menu.style.left = '-55%'
+        open.style.opacity = '1'
     }
 }
