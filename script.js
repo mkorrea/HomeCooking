@@ -43,3 +43,50 @@ function modo() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const subtitulos = document.querySelectorAll(".subtitulo");
+    
+    subtitulos.forEach(subtitulo => {
+        subtitulo.addEventListener("click", function () {
+            const container = this.nextElementSibling;
+            const mai = this.querySelector('#mais')
+            const men = this.querySelector('#menos')
+            if (container.style.opacity === "0" || container.style.opacity === "") {
+                container.style.display = 'flex'
+                container.style.opacity = "1";
+                men.style.transform = 'rotate(180deg)';
+            } else {
+                container.style.display = 'none'
+                container.style.opacity = "0";
+                men.style.transform = 'rotate(0deg)';
+            }
+        });
+    });
+});
+
+
+const categoria = document.querySelectorAll(".container")
+let isDragging = false;
+let startPositionX = 0;
+let scrollLeft = 0;
+
+categoria.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startPositionX = e.clientX - categoria.offsetLeft;
+    scrollLeft = categoria.scrollLeft;
+});
+
+categoria.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const x = e.clientX - categoria.offsetLeft;
+    const walk = (x - startPositionX) * 2; // Você pode ajustar a velocidade de rolagem aqui
+    categoria.scrollLeft = scrollLeft - walk;
+});
+
+categoria.addEventListener('mouseup', () => {
+    isDragging = false;
+});
+
+categoria.addEventListener('mouseleave', () => {
+    isDragging = false;
+});

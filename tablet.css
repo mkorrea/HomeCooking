@@ -1,16 +1,15 @@
 
 menu {
     position: static;
-    background-color: blue;
 }
 
 
 main {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: -10px;
+    gap: -10px; */
 }
 
 main div.receita {
-    width: 43vw;
+    /* width: 43vw; */
 }

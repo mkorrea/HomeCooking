@@ -1,13 +1,12 @@
 body {
-    background-color: blue;
 }
 
 main {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    gap: -10px;
+    gap: -10px; */
 }
 
 main div.receita {
-    width: 29vw;
+    /* width: 29vw; */
 }
