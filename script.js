@@ -65,28 +65,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const categoria = document.querySelectorAll(".container")
-let isDragging = false;
-let startPositionX = 0;
-let scrollLeft = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const containers = document.querySelectorAll(".container");
 
-categoria.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startPositionX = e.clientX - categoria.offsetLeft;
-    scrollLeft = categoria.scrollLeft;
+    containers.forEach(container => {
+        let isDragging = false;
+        let startX, scrollLeft;
+
+        container.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            startX = e.pageX - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+        });
+
+        container.addEventListener("mouseup", () => {
+            isDragging = false;
+        });
+
+        container.addEventListener("mouseleave", () => {
+            isDragging = false;
+        });
+
+        container.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 1.7; // Ajuste a sensibilidade aqui
+            container.scrollLeft = scrollLeft - walk;
+        });
+    });
 });
 
-categoria.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    const x = e.clientX - categoria.offsetLeft;
-    const walk = (x - startPositionX) * 2; // Você pode ajustar a velocidade de rolagem aqui
-    categoria.scrollLeft = scrollLeft - walk;
-});
 
-categoria.addEventListener('mouseup', () => {
-    isDragging = false;
-});
 
-categoria.addEventListener('mouseleave', () => {
-    isDragging = false;
-});
+
+
