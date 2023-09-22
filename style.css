@@ -142,6 +142,7 @@ div.subtitulo {
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
+    user-select: none;
     border-radius: 12px;
     color: brown;
     transition: .3s;
