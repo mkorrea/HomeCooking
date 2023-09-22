@@ -72,29 +72,37 @@ document.addEventListener("DOMContentLoaded", function () {
         let isDragging = false;
         let startX, scrollLeft;
 
-        container.addEventListener("mousedown", (e) => {
+        container.addEventListener("mousedown", startDrag);
+        container.addEventListener("touchstart", startDrag);
+
+        container.addEventListener("mouseup", endDrag);
+        container.addEventListener("touchend", endDrag);
+
+        container.addEventListener("mouseleave", endDrag);
+
+        container.addEventListener("mousemove", moveDrag);
+        container.addEventListener("touchmove", moveDrag);
+
+        function startDrag(e) {
             isDragging = true;
-            startX = e.pageX - container.offsetLeft;
+            startX = e.pageX || e.touches[0].pageX;
             scrollLeft = container.scrollLeft;
-        });
+        }
 
-        container.addEventListener("mouseup", () => {
+        function endDrag() {
             isDragging = false;
-        });
+        }
 
-        container.addEventListener("mouseleave", () => {
-            isDragging = false;
-        });
-
-        container.addEventListener("mousemove", (e) => {
+        function moveDrag(e) {
             if (!isDragging) return;
             e.preventDefault();
-            const x = e.pageX - container.offsetLeft;
-            const walk = (x - startX) * 1.7; // Ajuste a sensibilidade aqui
+            const x = e.pageX || e.touches[0].pageX;
+            const walk = (x - startX) * 2; // Ajuste a sensibilidade aqui
             container.scrollLeft = scrollLeft - walk;
-        });
+        }
     });
 });
+
 
 
 
