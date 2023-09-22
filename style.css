@@ -125,8 +125,12 @@ header h1 {
 }
 
 
-
-
+::-webkit-scrollbar {
+    width: 0px;
+}
+main {
+    height: 120vh;
+}
 
 div.categoria {
 }
