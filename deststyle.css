@@ -30,6 +30,7 @@ header a {
 }
 header #openburguer, #closeburguer {
     position: absolute;
+  
     width: 30px;
     display: flex;
     justify-content: start;
@@ -139,13 +140,13 @@ header h1 {
     width: 0px;
 }
 main {
-    width: 90%;
+    height: 120vh;
     margin: auto;
-    padding: 10px;
-    background-color: white;
 }
 
-
+div.categoria {
+    position: relative;
+}
 
 div.subtitulo {
     display: flex;
@@ -157,6 +158,23 @@ div.subtitulo {
     user-select: none;
     border-radius: 12px;
     color: brown;
+    transition: .3s;
+}
+
+div.subtitulo:hover {
+    background-color: rgb(226, 226, 226);   
+}
+
+div.subtitulo h2 {
+    font-size: 1.3em;
+}
+
+div.subtitulo span {
+    position: absolute;
+    right: 10vw;
+    font-size: 1.8em;
+    max-width: 100%;
+    text-align: end;
     transition: .3s;
 }
 

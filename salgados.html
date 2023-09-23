@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="deststyle.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="desttablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="destmonitor.css" media="screen and (min-width: 1200px)">
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <a href="index.html"><h1>HomeCooking</h1></a>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <li>Salgados</li>
+                <li>Doces</li>
+                <li>Seus Ingredientes</li>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="categoria">
+            <div class="subtitulo">
+                <h2>Café da manhã</h2>
+                <span id="menos" class="material-icons">expand_more</span>
+            </div>
+            <div class="container">
+                <div class="receita">
+                    <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+                    <p>Pão de Queijo</p>
+                </div>
+                <div class="receita">
+                    <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+                    <p>Pão de Queijo</p>
+                </div>
+                <div class="receita">
+                    <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+                    <p>Pão de Queijo</p>
+                </div>
+                <div class="receita">
+                    <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+                    <p>Pão de Queijo</p>
+                </div>
+                <div class="receita">
+                    <img src="images/pao-de-queijo.jpg" alt="Pão de Queijo">
+                    <p>Pão de Queijo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <div class="subtitulo">
+                <h2>Almoço</h2>
+                <span id="menos" class="material-icons">expand_more</span>
+            </div>
+            <div class="container">
+                <div class="receita">
+                    <img src="images/hamburguer.jpg" alt="Hambúrguer">
+                    <p>Hambúrguer</p>
+                </div>   
+                <div class="receita">
+                    <img src="images/hamburguer.jpg" alt="Hambúrguer">
+                    <p>Hambúrguer</p>
+                </div>   
+                <div class="receita">
+                    <img src="images/hamburguer.jpg" alt="Hambúrguer">
+                    <p>Hambúrguer</p>
+                </div>   
+                <div class="receita">
+                    <img src="images/hamburguer.jpg" alt="Hambúrguer">
+                    <p>Hambúrguer</p>
+                </div>   
+                <div class="receita">
+                    <img src="images/hamburguer.jpg" alt="Hambúrguer">
+                    <p>Hambúrguer</p>
+                </div>   
+            </div>
+        </div>
+
+        <div class="categoria">
+            <div class="subtitulo">
+                <h2>Lanche</h2>
+                <span id="menos" class="material-icons">expand_more</span>
+            </div>
+            <div class="container">
+                <div class="receita">
+                    <img src="images/coxinha.jpg" alt="Coxinha">
+                    <p>Coxinha de frango</p>
+                </div>
+                <div class="receita">
+                    <img src="images/coxinha.jpg" alt="Coxinha">
+                    <p>Coxinha de frango</p>
+                </div>
+                <div class="receita">
+                    <img src="images/coxinha.jpg" alt="Coxinha">
+                    <p>Coxinha de frango</p>
+                </div>
+                <div class="receita">
+                    <img src="images/coxinha.jpg" alt="Coxinha">
+                    <p>Coxinha de frango</p>
+                </div>
+                <div class="receita">
+                    <img src="images/coxinha.jpg" alt="Coxinha">
+                    <p>Coxinha de frango</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
