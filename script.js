@@ -5,6 +5,7 @@ var open = document.getElementById('openburguer')
 var close = document.getElementById('closeburguer')
 var main = document.getElementById('main')
 
+
 function clickMenu() {
     if (menu.style.left == '0%') { 
         menu.style.left = '-55%'
@@ -17,8 +18,15 @@ main.addEventListener("click", function fechar () {
         menu.style.left = '-55%' 
     }
 })
+function mudou() {
+    if (window.innerWidth > 1200) {
+        menu.style.left = '0.1%'
+    } else {
+        menu.style.left = '-55%'
+    }
+}
 
-    
+
 let modoEscuro = false;
 function modo() {
     modoEscuro = !modoEscuro;

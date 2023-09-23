@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">  <!-- padrão ( mobile-first ) -->
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
-    <link rel="stylesheet" href="monitor.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="monitor.css" media="screen and (min-width: 1200px)">
 </head>
-<body>
+<body id="body" onresize="mudou()">
     <header>
+        <h1>HomeCooking</h1>
         <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="menu">
             <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -24,15 +25,11 @@
             <div id="mode">
                 <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
                 <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
-
             </div>
-
         </menu>
-        <h1>HomeCooking</h1>
     </header>
 
     <main id="main">
-        
         <div class="categoria">
             <div class="subtitulo">
                 <h2>Café da manhã</h2>

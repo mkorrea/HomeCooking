@@ -1,12 +1,58 @@
-body {
+
+
+header #openburguer, #closeburguer {
+    display: none;
+}
+header menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-shadow: none;
+    background-color: transparent;
+    z-index: 0;
+    text-align: center;
+    
+}
+
+header > menu > ul {
+    position: absolute;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 37px;
+}
+header li {
+    margin: 10px;
+    width: 200px;
+    font-size: .1em;
 }
 
 main {
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: -10px; */
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    display: inline-block;
 }
 
+.categoria {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1200px;
+}
 main div.receita {
-    /* width: 29vw; */
+    width: 20vw;
+}
+
+main div.receita img {
+    width: 20vw;
+}
+
+main div.receita p {
+    font-size: 1.7em;
 }
