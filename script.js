@@ -3,17 +3,22 @@ var sol = document.getElementById('sol');
 var menu = document.getElementById('menu')
 var open = document.getElementById('openburguer')
 var close = document.getElementById('closeburguer')
+var main = document.getElementById('main')
 
 function clickMenu() {
-    if (menu.style.left == '0%') { //off
-        open.style.opacity = '1'
+    if (menu.style.left == '0%') { 
         menu.style.left = '-55%'
     } else {      
-        open.style.opacity = '0'
         menu.style.left = '0%'
     } 
 }
+main.addEventListener("click", function fechar () {
+    if (menu.style.left == '0%') { 
+        menu.style.left = '-55%' 
+    }
+})
 
+    
 let modoEscuro = false;
 function modo() {
     modoEscuro = !modoEscuro;
@@ -23,7 +28,6 @@ function modo() {
         lua.style.opacity = '0'
         sol.style.transform = 'rotate(180deg)';
         sol.style.opacity = '1'
-
         open.style.opacity = '1' 
         close.style.color = 'white'
         menu.style.backgroundColor = 'var(--darkback)'
@@ -33,12 +37,11 @@ function modo() {
         lua.style.opacity = '1'
         sol.style.transform = 'rotate(0deg)';
         sol.style.opacity = '0'
-
         open.style.opacity = '0'
         lua.style.color = 'black'
         close.style.color = 'black'
-        document.body.style.backgroundColor = 'var(--background)'
         menu.style.backgroundColor = 'rgb(230, 230, 230)'
+        document.body.style.backgroundColor = 'var(--background)'
     }
 }
 
@@ -52,11 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const mai = this.querySelector('#mais')
             const men = this.querySelector('#menos')
             if (container.style.opacity === "0" || container.style.opacity === "") {
-                container.style.display = 'flex'
+                container.style.maxHeight = '100%'
                 container.style.opacity = "1";
                 men.style.transform = 'rotate(180deg)';
             } else {
-                container.style.display = 'none'
+                container.style.maxHeight = '0'
                 container.style.opacity = "0";
                 men.style.transform = 'rotate(0deg)';
             }
