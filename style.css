@@ -81,7 +81,6 @@ header menu {
 header > menu > ul {
     margin-top: 50px;
     margin-left: 20px;
-    
 }
 
 header > menu > ul li {
@@ -99,7 +98,6 @@ header > menu > ul li {
     cursor: pointer;
     transition: .2s;
 }
-
 ul li:hover {
     transform: scale(105%);
     color: var(--subtitulo);

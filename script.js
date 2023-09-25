@@ -18,6 +18,10 @@ main.addEventListener("click", function fechar () {
         menu.style.left = '-55%' 
     }
 })
+if (window.innerWidth >= 1200) {
+    menu.style.left = '0.1%' 
+}
+    
 function mudou() {
     if (window.innerWidth >= 1200) {
         menu.style.left = '0.1%'
@@ -25,26 +29,11 @@ function mudou() {
         menu.style.left = '-55%'
     }
 }
-var hom = document.getElementById('hom')
-hom.addEventListener('mouseenter', function entrou() {
-    bg.style.background = 'var(--background) url(images/bg-home.jpg) no-repeat center center fixed'
-    bg.style.backgroundSize = 'cover'
-})
-var sal = document.getElementById('sal')
-sal.addEventListener('mouseenter', function entrou() {
-    bg.style.background = 'var(--background) url(images/bg-sal.jpg) no-repeat center center fixed'
-    bg.style.backgroundSize = 'cover'
-})
-var doc = document.getElementById('doc')
-doc.addEventListener('mouseenter', function entrou() {
-    bg.style.background = 'var(--background) url(images/bg-doce.jpg) no-repeat center center fixed'
-    bg.style.backgroundSize = 'cover'
-})
+
 
 let modoEscuro = false;
 function modo() {
     modoEscuro = !modoEscuro;
-    
     if (modoEscuro) {
         lua.style.transform = 'rotate(180deg)';
         lua.style.opacity = '0'

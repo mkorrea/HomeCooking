@@ -30,6 +30,12 @@ header li {
     width: 200px;
     font-size: .1em;
 }
+header div#mode {
+    position: absolute;
+    right: 65px;
+    top: 60px;
+}
+
 
 main {
     position: absolute;
