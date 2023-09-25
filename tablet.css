@@ -1,0 +1,6 @@
+html {
+    background: var(--background) url(images/bg-home.jpg) no-repeat center center;
+    background-size: cover;
+    transition: background .5s;
+
+}

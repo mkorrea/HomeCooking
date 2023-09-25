@@ -7,12 +7,13 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="deststyle.css">  <!-- padrão ( mobile-first ) -->
-    <link rel="stylesheet" href="desttablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="desttablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
     <link rel="stylesheet" href="destmonitor.css" media="screen and (min-width: 1200px)">
 </head>
 <body id="body" onresize="mudou()">
     <header>
-        <a href="index.html"><h1>HomeCooking</h1></a>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <a href="index.html"><h1 id="titulo">HomeCooking</h1></a>
         <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="menu">
             <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
