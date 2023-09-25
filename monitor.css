@@ -50,7 +50,8 @@ main {
     position: absolute;
     right: 20px;
     bottom: 20px;
-    width: 30%;
+    width: 28%;
+    max-height: 75%;
     display: inline-block;
 }
 

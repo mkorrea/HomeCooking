@@ -198,6 +198,9 @@ div.subtitulo:hover {
     background-color: rgba(226, 226, 226, 0.539);  
     color: rgb(255, 0, 0); 
 }
+div.subtitulo:active {
+    outline: none;
+}
 
 div.subtitulo h2 {
     font-size: 1.3em;
