@@ -21,18 +21,12 @@ html, body {
     height: 100%;
 }
 html {
-    background: var(--background) url(../images/bg-sal.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background: white;
     transition: background 1s;
 
 }
 body {
-    position: fixed;    
-    background: rgba(0, 0, 0, 0.544) repeat center center fixed;
-    background-size: cover;
-    backdrop-filter: blur(6px);
     font-family: Arial, Helvetica, sans-serif;
-    transition: .7s;
 }
 
 header #voltar {
@@ -53,6 +47,7 @@ header #voltar {
 }
 header {
     padding: 20px;
+    background-color: #fbf7f1;
 }
 header a {
     text-decoration: none;
@@ -195,7 +190,7 @@ div.subtitulo {
 }
 
 div.subtitulo:hover {
-    background-color: #fbf7f179;  
+    background-color: rgba(226, 226, 226, 0.539);  
     color: rgb(255, 0, 0); 
 }
 div.subtitulo:active {

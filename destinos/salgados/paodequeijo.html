@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../receitas.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="desttablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="destmonitor.css" media="screen and (min-width: 1200px)">
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <h1 id="titulo"><a href="../index.html">HomeCooking</a></h1>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="../index.html"><li id="hom">Home</li></a>
+                <a href="salgados.html"><li id="sal">Salgados</li></a>
+                <a href="doces.html"><li id="doc">Doces</li></a>
+                <a href="ingredientes.html"><li id="ing">Seus Ingredientes</li></a>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="comida">
+            <h1> Pão de Queijo </h1>
+        </div>
+        <img src="../../images/pao-de-queijo.jpg" alt="">
+        <div id="receita">
+            <h2>Receita</h2>
+            <input type="checkbox" name="in1" id="in1"><label for="in1"> 1 xícara de Leite</label>
+            <input type="checkbox" name="in2" id="in2"><label for="in2"> ½ xícara de óleo</label>
+            <input type="checkbox" name="in3" id="in3"><label for="in3"> ½ colher (sopa) rasa de sal</label>
+            <input type="checkbox" name="in4" id="in4"><label for="in4"> 500g de polvilho doce</label>
+            <input type="checkbox" name="in5" id="in5"><label for="in5"> 2 ovos</label>
+            <input type="checkbox" name="in6" id="in6"><label for="in6"> 1 ½ xícara de queijo meia cura ralado</label>
+        </div>
+
+        <div id="preparo">
+            <h2>Modo de Preparo</h2>
+            <p>Coloque o leite, o óleo e o sal numa leiteira. Leve ao fogo alto e, quando levantar fervura, despeje a mistura sobre o polvilho previamente colocado numa vasilha.</p>
+            
+            <p>Mexa bem com uma colher de pau, para que o polvilho fique impregnado de líquido. Em seguida, acrescente os ovos, um a um, sempre mexendo com a colher de pau.</p>
+            
+            <p>Junte o queijo ralado e misture com as mãos até que a massa não grude nas mãos. Sove a massa sobre uma superfície enfarinhada, até que ela fique homogênea e macia.</p>
+            
+            <p>Em seguida, enrole pequenas bolinhas na palma da mão, dispondo-as numa assadeira retangular untada e enfarinhada. Leve para assar em forno preaquecido a 200°C por 20 minutos.</p>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
