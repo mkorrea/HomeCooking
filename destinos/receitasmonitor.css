@@ -40,26 +40,16 @@ header div#mode {
 main {
     position: absolute;
     top: 180px;
-    width: 100%;
-    display: inline-block;
-}
-
-.categoria {
-    display: flex;
-    flex-direction: column;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1200px;
-}
-main div.receita a{
-    width: 20vw;
-}
-
-main div.receita img {
-    width: 20vw;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightcoral;
 }
 
-main div.receita p {
-    font-size: 1.1em;
-    
+main > img {
+    width: 45%;
+    left: 30%;
 }

@@ -1,0 +1,12 @@
+main div.receita a{
+    width: 35vw;
+}
+
+main div.receita img {
+    width: 35vw;
+}
+main div.receita p {
+    padding-bottom: 10px;
+    padding: 2px 10px;
+    font-size: 2vw;
+}

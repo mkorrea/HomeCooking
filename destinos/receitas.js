@@ -43,9 +43,7 @@ function modo() {
         open.style.color = 'white'
         close.style.color = 'white'
         menu.style.backgroundColor = 'var(--darkback)'
-        bg.style.background = 'var(--background) url(images/bg-dark-home-mb.jpg) no-repeat center center fixed'
-        bg.style.backgroundSize = 'cover'
-        document.body.style.background = 'rgba(0, 0, 0, 0.400)'
+        document.body.style.background = 'var(--darkback)'
         main.style.background = '#0f0f0fd8'
         main.style.color = 'white'
     } else if (!modoEscuro) {
@@ -57,9 +55,7 @@ function modo() {
         open.style.color = 'black'
         close.style.color = 'black'
         menu.style.backgroundColor = 'rgb(230, 230, 230)'
-        bg.style.background = 'var(--background) url(images/bg-home-mb.jpg) no-repeat center center fixed'
-        bg.style.backgroundSize = 'cover'
-        document.body.style.background = 'rgba(0, 0, 0, 0.400)'
+        document.body.style.background = 'rgb(230, 230, 230)'
         main.style.background = '#ffffffd8'
         main.style.color = 'black'
     }

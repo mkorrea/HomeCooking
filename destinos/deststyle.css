@@ -13,6 +13,7 @@
     --backtext: #ffffff;
     --subtitulo: rgba(244, 29, 5, 0.993);
     --darkback: #101013;
+    --backcor2: #fbf7f1;
 }
 
 
@@ -91,7 +92,7 @@ header menu {
     margin: -20px;
     padding: 20px;
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.241);
-    background-color: rgb(230, 230, 230);
+    background-color: var(--backcor2);
     transition-timing-function: ease;
     transition: left .4s, background-color .2s;
     z-index: 1;
@@ -230,11 +231,10 @@ div.container {
     z-index: 0;
 }
 
-main div.receita {
+main div.receita a {
     display: flex;
     flex-direction: column;
     width: 60vw;
-    margin: 5px;
     margin-left: 0px;
     margin-right: 30px;
     cursor: pointer;
@@ -243,9 +243,10 @@ main div.receita {
     background-color: var(--backtext);
     transition: width .3s, height .3s, transform .3s ease;
 }
-.receita:hover {
-transform: scale(102%);
+div.receita a:hover {
+    transform: scale(102%);
 }
+
 main div.receita img {
     aspect-ratio: 18/9;
     width: 60vw;
@@ -256,7 +257,10 @@ main div.receita img {
 
 main div.receita p {
     display: flex;
-    padding: 11px;
+    padding-bottom: 10px;
+    
+    padding: 2px 10px;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 2.7vw;
     text-indent: 20px;
 }
