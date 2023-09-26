@@ -23,7 +23,7 @@ html, body {
 html {
     background: var(--background) url(images/bg-home-mb.jpg) no-repeat center center fixed;
     background-size: cover;
-    transition: background 1s;
+    transition: background .4s;
 }
 body {
     background: rgba(0, 0, 0, 0.400) repeat center center fixed;

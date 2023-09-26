@@ -75,75 +75,11 @@ tit.addEventListener('mouseleave', function saiu() {
     vol.style.top = '-30px'
 })
 
-
-
-
-
-
-
-// abeertura e fechamento de categorias
-document.addEventListener("DOMContentLoaded", function () {
-    const subtitulos = document.querySelectorAll(".subtitulo");
-    
-    subtitulos.forEach(subtitulo => {
-        subtitulo.addEventListener("click", function () {
-            const container = this.nextElementSibling;
-            const mai = this.querySelector('#mais')
-            const men = this.querySelector('#menos')
-            if (container.style.opacity === "0" || container.style.opacity === "") {
-                container.style.maxHeight = '100%'
-                container.style.opacity = "1";
-                men.style.transform = 'rotate(180deg)';
-            } else {
-                container.style.maxHeight = '0'
-                container.style.opacity = "0";
-                men.style.transform = 'rotate(0deg)';
-            }
-        });
+// riscar ingredientes selecionados
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const label = document.querySelector(`label[for="${this.id}"]`);
+        label.style.textDecoration = this.checked ? 'line-through' : 'none';
     });
 });
-
-// rolagem lateral de categorias
-document.addEventListener("DOMContentLoaded", function () {
-    const containers = document.querySelectorAll(".container");
-
-    containers.forEach(container => {
-        let isDragging = false;
-        let startX, scrollLeft;
-
-        container.addEventListener("mousedown", startDrag);
-        container.addEventListener("touchstart", startDrag);
-
-        container.addEventListener("mouseup", endDrag);
-        container.addEventListener("touchend", endDrag);
-
-        container.addEventListener("mouseleave", endDrag);
-
-        container.addEventListener("mousemove", moveDrag);
-        container.addEventListener("touchmove", moveDrag);
-
-        function startDrag(e) {
-            isDragging = true;
-            startX = e.pageX || e.touches[0].pageX;
-            scrollLeft = container.scrollLeft;
-        }
-
-        function endDrag() {
-            isDragging = false;
-        }
-
-        function moveDrag(e) {
-            if (!isDragging) return;
-            e.preventDefault();
-            const x = e.pageX || e.touches[0].pageX;
-            const walk = (x - startX) * 2; // Ajuste a sensibilidade aqui
-            container.scrollLeft = scrollLeft - walk;
-        }
-    });
-});
-
-
-
-
-
-

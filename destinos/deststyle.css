@@ -45,7 +45,7 @@ header #voltar {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: .8em;
-    border-radius: 0px 0px 14px 14px;
+    border-radius: 0px 0px 50% 50%;
     background-color: rgba(255, 255, 255, 0.269);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.18);
     transition: top .5s ease;
