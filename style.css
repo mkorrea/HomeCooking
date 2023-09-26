@@ -155,10 +155,13 @@ header h1 {
     height: 0px;
 }
 main {
+    height: 90%;
+}
+main #inicio {
     width: 85%;
     margin: auto;
     padding: 15px;
-    background-color: #ffffff6b;
+    background-color: #ffffffc6;
     color: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
     border-radius: 15px;

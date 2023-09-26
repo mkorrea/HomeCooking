@@ -15,14 +15,14 @@ function clickMenu() {
     } 
 }
 main.addEventListener("click", function fechar () {
-    if (menu.style.left == '-55%') { 
+    if (menu.style.left != '-55%' && window.innerWidth <= 1200) { 
         menu.style.left = '-55%' 
     }
 })
+
 if (window.innerWidth >= 1200) {
     menu.style.left = '0.1%' 
-}
-    
+}    
 function mudou() {
     if (window.innerWidth >= 1200) {
         menu.style.left = '0.1%'

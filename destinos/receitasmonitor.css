@@ -46,10 +46,27 @@ main {
     max-width: 1300px;
     display: flex;
     flex-direction: column;
-    background-color: lightcoral;
 }
 
 main > img {
     width: 45%;
-    left: 30%;
+    left: 27%;
+    top: 1%;
+}
+
+main section {
+    width: 50%;
+}
+main section#rec {
+    position: absolute;
+    top: 6%;
+    right: -8%;
+}
+
+main section#preparo {
+    position: absolute;
+    top: 600px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
 }

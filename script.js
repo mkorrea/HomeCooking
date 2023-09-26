@@ -15,7 +15,7 @@ function clickMenu() {
     } 
 }
 main.addEventListener("click", function fechar () {
-    if (menu.style.left == '-55%') { 
+    if (menu.style.left != '-55%' && window.innerWidth <= 1200) { 
         menu.style.left = '-55%' 
     }
 })
@@ -65,85 +65,22 @@ function modo() {
     }
 }
 
-// voltar ao menu
-var tit = document.getElementById('titulo')
-var vol = document.getElementById('voltar')
-tit.addEventListener('mouseenter', function entrou() {
-    vol.style.top = '-2px'
+var bg = document.getElementById('html')
+var hom = document.getElementById('hom')
+var sal = document.getElementById('sal')
+var doc = document.getElementById('doc')
+hom.addEventListener('mouseenter', function entrou() {
+    bg.style.background = 'var(--background) url(images/bg-home.jpg) no-repeat center center fixed'
+    bg.style.backgroundSize = 'cover'
+    open.style.color = 'black'
 })
-tit.addEventListener('mouseleave', function saiu() {
-    vol.style.top = '-30px'
+sal.addEventListener('mouseenter', function entrou() {
+    bg.style.background = 'var(--background) url(images/bg-sal.jpg) no-repeat center center fixed'
+    bg.style.backgroundSize = 'cover'
+    open.style.color = 'white'
 })
-
-
-
-
-
-
-
-// abeertura e fechamento de categorias
-document.addEventListener("DOMContentLoaded", function () {
-    const subtitulos = document.querySelectorAll(".subtitulo");
-    
-    subtitulos.forEach(subtitulo => {
-        subtitulo.addEventListener("click", function () {
-            const container = this.nextElementSibling;
-            const mai = this.querySelector('#mais')
-            const men = this.querySelector('#menos')
-            if (container.style.opacity === "0" || container.style.opacity === "") {
-                container.style.maxHeight = '100%'
-                container.style.opacity = "1";
-                men.style.transform = 'rotate(180deg)';
-            } else {
-                container.style.maxHeight = '0'
-                container.style.opacity = "0";
-                men.style.transform = 'rotate(0deg)';
-            }
-        });
-    });
-});
-
-// rolagem lateral de categorias
-document.addEventListener("DOMContentLoaded", function () {
-    const containers = document.querySelectorAll(".container");
-
-    containers.forEach(container => {
-        let isDragging = false;
-        let startX, scrollLeft;
-
-        container.addEventListener("mousedown", startDrag);
-        container.addEventListener("touchstart", startDrag);
-
-        container.addEventListener("mouseup", endDrag);
-        container.addEventListener("touchend", endDrag);
-
-        container.addEventListener("mouseleave", endDrag);
-
-        container.addEventListener("mousemove", moveDrag);
-        container.addEventListener("touchmove", moveDrag);
-
-        function startDrag(e) {
-            isDragging = true;
-            startX = e.pageX || e.touches[0].pageX;
-            scrollLeft = container.scrollLeft;
-        }
-
-        function endDrag() {
-            isDragging = false;
-        }
-
-        function moveDrag(e) {
-            if (!isDragging) return;
-            e.preventDefault();
-            const x = e.pageX || e.touches[0].pageX;
-            const walk = (x - startX) * 2; // Ajuste a sensibilidade aqui
-            container.scrollLeft = scrollLeft - walk;
-        }
-    });
-});
-
-
-
-
-
-
+doc.addEventListener('mouseenter', function entrou() {
+    bg.style.background = 'var(--background) url(images/bg-doce.jpg) no-repeat center center fixed'
+    bg.style.backgroundSize = 'cover'
+    open.style.color = 'white'
+})

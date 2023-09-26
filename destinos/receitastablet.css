@@ -1,0 +1,14 @@
+main section {
+    width: 50%;
+}
+main section#rec {
+    position: absolute;
+    top: 680px;
+    left: 5%;
+}
+
+main section#preparo {
+    position: absolute;
+    top: 680px;
+    right: 1%;
+}

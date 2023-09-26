@@ -88,7 +88,7 @@ header menu {
     margin: -20px;
     padding: 20px;
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.241);
-    background-color: rgb(230, 230, 230);
+    background-color: var(--backcor2);
     transition-timing-function: ease;
     transition: left .4s, background-color .2s;
     z-index: 1;
@@ -189,14 +189,14 @@ main > img {
     width: 85%;
     height: 500px;
     object-fit: cover;
-    object-position: 30%;
+    object-position: 50%;
     border-radius: 15px;
     border: 10px solid var(--backcor2);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.234);
 }
 
 main section {
-    margin: 20px;
+    margin: 20px 30px;
 }
 main h2 {
     width: fit-content;
@@ -223,7 +223,7 @@ main div#receita label {
     display: flex;
     margin: 4px;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #fffdfb;
+    color: #907162;
 }
 .ingredientes {
     display: none;
@@ -240,10 +240,10 @@ main div#receita label {
     text-align: center;
 }
 .ingredientes:checked + label {
-    color: gray;
+    color: #907162;
 }
 .ingredientes:checked + label:before {
-    background: gray;
+    background: #907162;
 }
 section#preparo div.passo {
     display: flex;
