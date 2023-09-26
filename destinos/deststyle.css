@@ -226,6 +226,7 @@ div.container {
     width: 90%;
     transition: opacity .3s;
     overflow-x: hidden;
+    overflow-y: hidden;
     border-radius: 20px;
     z-index: 0;
 }
