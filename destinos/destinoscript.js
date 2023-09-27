@@ -42,8 +42,7 @@ function modo() {
         sol.style.opacity = '1'
         menu.style.backgroundColor = 'var(--darkback)'
         menu.style.backgroundColor = 'var(--darkback)'
-        document.body.style.background = 'var(--darkback)'
-        main.style.background = '#0f0f0fd8'
+        document.body.style.background = 'rgba(0, 0, 0, 0.844) repeat center center fixed'
         main.style.color = 'white'
     } else if (!modoEscuro) {
         lua.style.transform = 'rotate(0deg)';
@@ -52,8 +51,7 @@ function modo() {
         sol.style.opacity = '0'
         lua.style.color = 'black'
         menu.style.backgroundColor = 'rgb(230, 230, 230)'
-        document.body.style.background = 'rgb(230, 230, 230)'
-        main.style.background = '#ffffffd8'
+        document.body.style.background = 'rgba(0, 0, 0, 0.544) repeat center center fixed'
         main.style.color = 'black'
     }
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="deststyle.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="desttablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="destmonitor.css" media="screen and (min-width: 1200px)">
+    <style>
+        html {
+            background: var(--background) url(../images/bg-doce.jpg) no-repeat center center fixed;
+        }
+    </style>
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <h1 ><a href="../index.html" id="titulo">HomeCooking</a></h1>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="../index.html"><li id="hom">Home</li></a>
+                <a href="../destinos/salgados.html"><li id="sal">Salgados</li></a>
+                <a href="../destinos/doces.html"><li id="doc">Doces</li></a>
+                <a href="../erro.html"><li id="ing">Seus Ingredientes</li></a>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="categoria">
+            <div class="subtitulo">
+                <h2>Sobremesas</h2>
+                <span id="menos" class="material-icons">expand_more</span>
+            </div>
+            <div class="container">
+                <div class="receita">
+                    <a href="../erro.html">
+                        <img src="../images/bg-doce.jpg" alt="Pão de Queijo">
+                        <p> ------ </p>
+                    </a>
+                </div>
+                <div class="receita">
+                    <a href="salgados/cafe/capuccino.html">
+                        <img src="../images/bg-doce.jpg" alt="Pão de Queijo">
+                        <p> ------ </p>
+                    </a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <script src="destinoscript.js"></script>
+</body>
+</html>
