@@ -5,6 +5,7 @@ var open = document.getElementById('openburguer')
 var close = document.getElementById('closeburguer')
 var bg = document.getElementById('html')
 var main = document.getElementById('main')
+var initxt = document.getElementById('inicio')
 
 // menu lateral escondido
 function clickMenu() {
@@ -46,8 +47,8 @@ function modo() {
         bg.style.background = 'var(--background) url(images/bg-dark-home-mb.jpg) no-repeat center center fixed'
         bg.style.backgroundSize = 'cover'
         document.body.style.background = 'rgba(0, 0, 0, 0.400)'
-        main.style.background = '#0f0f0fd8'
-        main.style.color = 'white'
+        initxt.style.background = '#0f0f0fd8'
+        initxt.style.color = 'white'
     } else if (!modoEscuro) {
         lua.style.transform = 'rotate(0deg)';
         lua.style.opacity = '1'
@@ -60,8 +61,8 @@ function modo() {
         bg.style.background = 'var(--background) url(images/bg-home-mb.jpg) no-repeat center center fixed'
         bg.style.backgroundSize = 'cover'
         document.body.style.background = 'rgba(0, 0, 0, 0.400)'
-        main.style.background = '#ffffffd8'
-        main.style.color = 'black'
+        initxt.style.background = '#ffffffd8'
+        initxt.style.color = 'black'
     }
 }
 

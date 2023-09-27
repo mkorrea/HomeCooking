@@ -197,6 +197,7 @@ main > img {
 
 main section {
     margin: 20px 30px;
+
 }
 main h2 {
     width: fit-content;
@@ -213,15 +214,13 @@ main div#receita {
     flex-direction: column;
     width: fit-content;
     padding: 10px 0px;
+    
 }
 
 main div#receita label {
-    padding: 6px;
-}
-
-#receita label {
     display: flex;
     margin: 4px;
+    padding: 6px;
     font-family: 'Ubuntu', sans-serif;
     color: #907162;
 }

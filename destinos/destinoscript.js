@@ -69,11 +69,6 @@ tit.addEventListener('mouseleave', function saiu() {
 })
 
 
-
-
-
-
-
 // abertura e fechamento de categorias
 document.addEventListener("DOMContentLoaded", function () {
     const subtitulos = document.querySelectorAll(".subtitulo");
