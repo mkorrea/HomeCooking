@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parmegiana de Frango</title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../receitas.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="../../receitastablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="../../receitasmonitor.css" media="screen and (min-width: 1200px)">
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <h1 ><a href="../../index.html" id="titulo">HomeCooking</a></h1>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="../../../index.html"><li id="hom">Home</li></a>
+                <a href="../../salgados.html"><li id="sal">Salgados</li></a>
+                <a href="../../../erro.html"><li id="doc">Doces</li></a>
+                <a href="../../../erro.html"><li id="ing">Seus Ingredientes</li></a>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="comida">
+            <h1> Parmegiana de Frango </h1>
+        </div>
+        <img src="../../../images/parmegiana.jpg" alt="">
+        <section id="rec">
+            <h2>Receita</h2>
+            <div id="receita">
+                <input type="checkbox" id="i1" class="ingredientes" value="leite">
+                    <label for="i1"> Filé Mignon 10 filés </label>
+                
+                <input type="checkbox" id="i2" class="ingredientes" value="oleo"> 
+                    <label for="i2"> Ovo 2 unidades </label>
+                
+                <input type="checkbox" id="i3" class="ingredientes" value=""> 
+                    <label for="i3"> 1 pitada de Sal e Açúcar </label>
+                
+                <input type="checkbox" id="i4" class="ingredientes" value="polvilho-doce">
+                    <label for="i4"> Mussarela 10 fatias </label>
+                
+                <input type="checkbox" id="i5" class="ingredientes" value="ovos">
+                    <label for="i5"> Extrato de tomates 1 caixa </label>
+                
+                <input type="checkbox" id="i6" class="ingredientes" value="queijo">
+                    <label for="i6"> Farinha de rosca a gosto </label>
+
+                <input type="checkbox" id="i6" class="ingredientes" value="queijo">
+                    <label for="i6"> Farinha de trigo a gosto </label>
+            </div>
+        </section>
+
+        <section id="preparo">
+            <h2>Modo de Preparo</h2>
+
+            <div class="passo">
+                <span class="mark"> 1 </span>
+                    <p>
+                        Faça os bifes à milanesa: corte o filé em bifes, não muito finos e tempere-os a gosto.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 2 </span>
+                    <p>
+                        Passe os bifes na farinha de trigo.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 3 </span>
+                    <p>
+                        Bata ligeiramente os ovos (dois ou mais) com uma pitadinha de sal, passe os bifes nessa mistura.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 4 </span>
+                    <p>
+                        Depois passe os bifes na farinha de rosca.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 5 </span>
+                    <p>
+                        Faça com que a massa fique bem aderida aos bifes.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 6 </span>
+                    <p>
+                        Frite os bifes, deixe-os em papel toalha para que sequem bem e coloque-os em uma fôrma refratária.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 7 </span>
+                    <p>
+                        Faça um molho com extrato de tomate com uma pitadinha de açúcar e coloque sobre os filés. O melhor sempre será o seu próprio molho de tomates
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 8 </span>
+                    <p>
+                        Cubra-os com as fatias de muçarela e coloque no forno por aproximadamente 10 minutos.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 9 </span>
+                    <p>
+                        Pode ser queijo prato e recomendamos polvilhar queijo parmesão ralado, antes de gratinar.
+                    </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../receitas.js"></script>
+</body>
+</html>

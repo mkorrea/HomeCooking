@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pão de Queijo</title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../receitas.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="../../receitastablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="../../receitasmonitor.css" media="screen and (min-width: 1200px)">
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <h1 ><a href="../../../index.html" id="titulo">HomeCooking</a></h1>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="../../../index.html"><li id="hom">Home</li></a>
+                <a href="../../salgados.html"><li id="sal">Salgados</li></a>
+                <a href="../../../erro.html"><li id="doc">Doces</li></a>
+                <a href="../../../erro.html"><li id="ing">Seus Ingredientes</li></a>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="comida">
+            <h1> Pão de Queijo </h1>
+        </div>
+        <img src="../../../images/pao-de-queijo.jpg" alt="">
+        <section id="rec">
+            <h2>Receita</h2>
+            <div id="receita">
+                <input type="checkbox" id="i1" class="ingredientes" value="leite">
+                    <label for="i1"> 1 xícara de Leite</label>
+                
+                <input type="checkbox" id="i2" class="ingredientes" value="oleo"> 
+                    <label for="i2"> ½ xícara de óleo</label>
+                
+                <input type="checkbox" id="i3" class="ingredientes" value=""> 
+                    <label for="i3"> ½ colher (sopa) rasa de sal</label>
+                
+                <input type="checkbox" id="i4" class="ingredientes" value="polvilho-doce">
+                    <label for="i4"> 500g de polvilho doce</label>
+                
+                <input type="checkbox" id="i5" class="ingredientes" value="ovos">
+                    <label for="i5"> 2 ovos</label>
+                
+                <input type="checkbox" id="i6" class="ingredientes" value="queijo">
+                    <label for="i6"> 1 ½ xícara de queijo meia cura ralado</label>
+            </div>
+        </section>
+
+        <section id="preparo">
+            <h2>Modo de Preparo</h2>
+
+            <div class="passo">
+                <span class="mark"> 1 </span>
+                    <p>Coloque o leite, o óleo e o sal numa leiteira. Leve ao fogo alto e, quando levantar fervura, despeje a mistura sobre o polvilho previamente colocado numa vasilha.</p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 2 </span>
+                
+                    <p>Mexa bem com uma colher de pau, para que o polvilho fique impregnado de líquido. Em seguida, acrescente os ovos, um a um, sempre mexendo com a colher de pau.</p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 3 </span>
+                
+                   <p>Junte o queijo ralado e misture com as mãos até que a massa não grude nas mãos. Sove a massa sobre uma superfície enfarinhada, até que ela fique homogênea e macia.</p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 4 </span>
+                
+                   <p>Em seguida, enrole pequenas bolinhas na palma da mão, dispondo-as numa assadeira retangular untada e enfarinhada. Leve para assar em forno preaquecido a 200°C por 20 minutos.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../../receitas.js"></script>
+</body>
+</html>
