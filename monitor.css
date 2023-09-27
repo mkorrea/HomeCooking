@@ -46,7 +46,7 @@ header div#mode {
     top: 60px;
 }
 
-main {
+main #inicio {
     position: absolute;
     right: 20px;
     bottom: 20px;
