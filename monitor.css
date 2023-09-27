@@ -50,8 +50,8 @@ main #inicio {
     position: absolute;
     right: 20px;
     bottom: 20px;
-    width: 28%;
-    max-height: 75%;
+    max-width: 28%;
+    max-height: calc(100% - 210px);
     display: inline-block;
 }
 
