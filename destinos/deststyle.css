@@ -178,6 +178,7 @@ main {
 
 div.categoria {
     position: relative;
+
 }
 
 div.subtitulo {
@@ -223,14 +224,19 @@ div.container {
     flex-wrap: nowrap;
     margin: auto;
     margin-top: 15px;
+    padding: 10px;
     width: 90%;
     transition: opacity .3s;
     overflow-x: hidden;
     overflow-y: hidden;
     border-radius: 20px;
+    box-sizing: border-box;
     z-index: 0;
 }
+div.receita {
+    transition: width .3s, height .3s, transform .3s ease;
 
+}
 main div.receita a {
     display: flex;
     flex-direction: column;
@@ -245,9 +251,8 @@ main div.receita a {
     color: white;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.475);
     background-color: #706d6a74;
-    transition: width .3s, height .3s, transform .3s ease;
 }
-div.receita a:hover {
+div.receita:hover {
     transform: scale(102%);
 }
 

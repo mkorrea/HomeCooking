@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrogonofe de Frango</title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../receitas.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="../../receitastablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="../../receitasmonitor.css" media="screen and (min-width: 1200px)">
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <h1 ><a href="../../index.html" id="titulo">HomeCooking</a></h1>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="../../../index.html"><li id="hom">Home</li></a>
+                <a href="../../salgados.html"><li id="sal">Salgados</li></a>
+                <a href="../../../erro.html"><li id="doc">Doces</li></a>
+                <a href="../../../erro.html"><li id="ing">Seus Ingredientes</li></a>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="comida">
+            <h1> Estrogonofe de Frango </h1>
+        </div>
+        <img src="../../../images/strogonoff-de-frango.jpg" alt="Estrogonofe de Frango">
+        <section id="rec">
+            <h2>Receita</h2>
+            <div id="receita">
+
+                <input type="checkbox" id="i1" class="ingredientes" value="leite">
+                    <label for="i1"> 3 colheres de sopa de óleo </label>
+                
+                <input type="checkbox" id="i2" class="ingredientes" value="oleo"> 
+                    <label for="i2"> 1 tablete de caldo de galinha </label>
+                
+                <input type="checkbox" id="i3" class="ingredientes" value=""> 
+                    <label for="i3"> 1 quilo de peito de frango em cubos </label>
+                
+                <input type="checkbox" id="i4" class="ingredientes" value="polvilho-doce">
+                    <label for="i4"> 2 colheres de sopa de molho de tomate </label>
+                
+                <input type="checkbox" id="i5" class="ingredientes" value="ovos">
+                    <label for="i5"> 2 colheres de sopa de ketchup </label>
+                
+                <input type="checkbox" id="i6" class="ingredientes" value="queijo">
+                    <label for="i6"> 1 lata de creme de leite sem soro </label>
+
+            </div>
+
+        </section>
+
+        <section id="preparo">
+            <h2>Modo de Preparo</h2>
+
+            <div class="passo">
+                <span class="mark"> 1 </span>
+                    <p>
+                        Em uma panela, coloque 3 colheres de sopa de óleo e 1 tablete de caldo de galinha. Espere aquecer para dissolver o tablete.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 2 </span>
+                    <p>
+                        Em seguida, adicione 1 quilo de peito de frango em cubos e deixe dourar.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 3 </span>
+                    <p>
+                        Depois, acrescente 2 colheres de sopa de molho de tomate e 2 colheres de sopa de ketchup. Misture.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 4 </span>
+                    <p>
+                        Desligue o fogo e acrescente 1 lata de creme de leite. Misture novamente.
+                    </p>
+            </div>
+
+            <div class="passo">
+                <span class="mark"> 5 </span>
+                    <p>
+                        Sirva em seguida.
+                    </p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../../receitas.js"></script>
+</body>
+</html>
