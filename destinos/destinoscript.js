@@ -41,7 +41,6 @@ function modo() {
         sol.style.transform = 'rotate(180deg)';
         sol.style.opacity = '1'
         menu.style.backgroundColor = 'var(--darkback)'
-        menu.style.backgroundColor = 'var(--darkback)'
         document.body.style.background = 'rgba(0, 0, 0, 0.844) repeat center center fixed'
         main.style.color = 'white'
     } else if (!modoEscuro) {

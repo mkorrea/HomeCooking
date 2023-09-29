@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pavê de Chocolate </title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../receitas.css">  <!-- padrão ( mobile-first ) -->
+    <link rel="stylesheet" href="../../receitastablet.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="../../receitasmonitor.css" media="screen and (min-width: 1200px)">
+</head>
+<body id="body" onresize="mudou()">
+    <header>
+        <div id="voltar"> ≪ Voltar ao início </div>
+        <h1 ><a href="../../../index.html" id="titulo">HomeCooking</a></h1>
+        <span id="openburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <span id="closeburguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <a href="../../../index.html"><li id="hom">Home</li></a>
+                <a href="../../salgados.html"><li id="sal">Salgados</li></a>
+                <a href="../../doces.html"><li id="doc">Doces</li></a>
+                <a href="../../../erro.html"><li id="ing">Seus Ingredientes</li></a>
+            </ul>
+            <div id="mode">
+                <span id="lua" class="material-icons" onclick="modo()">brightness_3</span>
+                <span id="sol" class="material-icons" onclick="modo()">light_mode</span>
+            </div>
+        </menu>
+    </header>
+
+    <main id="main">
+        <div class="comida">
+            <h1> Pavê de Chocolate </h1>
+        </div>
+        <img src="../../../images/pave.jpg" alt="Pavê de Chocolate">
+        <section id="rec">
+            <h2>Receita</h2>
+            <div id="receita">
+                <input type="checkbox" id="i1" class="ingredientes" value="leite">
+                    <label for="i1">
+                        2 gemas
+                    </label>
+                
+                <input type="checkbox" id="i2" class="ingredientes" value="oleo"> 
+                    <label for="i2">
+                        1 colher (sopa) de amido de milho (6 g)
+                    </label>
+                
+                <input type="checkbox" id="i3" class="ingredientes" value=""> 
+                    <label for="i3">
+                        1 colher (sopa) de farinha de trigo (7 g)
+                    </label>
+                
+                <input type="checkbox" id="i4" class="ingredientes" value="polvilho-doce">
+                    <label for="i4">
+                        1 lata de leite condensado (395 g)
+                    </label>    
+                
+                <input type="checkbox" id="i5" class="ingredientes" value="ovos">
+                    <label for="i5">
+                        2 xícaras (chá) de leite (480 ml)
+                    </label>      
+                
+                <input type="checkbox" id="i6" class="ingredientes" value="queijo">
+                    <label for="i6">
+                        3 colheres (sopa) de cacau em pó (18 g)
+                    </label>  
+                
+                <input type="checkbox" id="i7" class="ingredientes" value="queijo">
+                    <label for="i7">
+                        1/2 xícara de chocolate meio amargo ralado
+                    </label>   
+                
+                <input type="checkbox" id="i8" class="ingredientes" value="queijo">
+                    <label for="i8">
+                        1 pacote de Biscoito Todeschini Maizena
+                    </label>  
+                
+                <input type="checkbox" id="i9" class="ingredientes" value="queijo">
+                    <label for="i9">
+                        1 xícara (chá) de leite (240 ml) - para banhar os biscoitos
+                    </label>       
+
+            </div>
+        </section>
+
+        <section id="preparo">
+            <h2>Modo de Preparo</h2>
+            <div class="passo">
+                <span class="mark"> 1 </span>
+                <p>
+                    Em uma panela, coloque as gemas, o amido de milho e a farinha de trigo, o leite condensado e, em seguida, o leite. Mexa bem. Leve ao fogo mexendo sempre até engrossar.
+                </p>
+            </div>
+                            
+            <div class="passo">
+                <span class="mark"> 2 </span>
+                <p>
+                    Divida o creme de 2 partes. Acrescente o chocolate e o cacau em uma das partes. Misture bem.
+                </p>
+            </div>
+            
+            <div class="passo">
+                <span class="mark"> 3 </span>
+                <p>
+                    Molhe os biscoitos no leite e arrume no fundo do refratário. Em seguida, espalhe o creme branco.
+                </p>
+            </div>
+            
+            <div class="passo">
+                <span class="mark"> 4 </span>
+                <p>
+                    Faça mais uma camada de biscoitos molhados no leite. Distribua o creme de chocolate.
+                </p>
+            </div>
+            
+            <div class="passo">
+                <span class="mark"> 5 </span>
+                <p>
+                    Finalize com raspas de chocolate e leve para gelar por, pelo menos, 2 horas.
+                </p>
+            </div>
+
+         </div>
+        </section>
+    </main>
+
+    <script src="../../receitas.js"></script>
+</body>
+</html>

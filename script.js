@@ -70,6 +70,7 @@ var bg = document.getElementById('html')
 var hom = document.getElementById('hom')
 var sal = document.getElementById('sal')
 var doc = document.getElementById('doc')
+var ing = document.getElementById('ing')
 hom.addEventListener('mouseenter', function entrou() {
     bg.style.background = 'var(--background) url(images/bg-home.jpg) no-repeat center center fixed'
     bg.style.backgroundSize = 'cover'
@@ -82,6 +83,11 @@ sal.addEventListener('mouseenter', function entrou() {
 })
 doc.addEventListener('mouseenter', function entrou() {
     bg.style.background = 'var(--background) url(images/bg-doce.jpg) no-repeat center center fixed'
+    bg.style.backgroundSize = 'cover'
+    open.style.color = 'white'
+})
+ing.addEventListener('mouseenter', function entrou() {
+    bg.style.background = 'var(--background) url(images/bg-home-mb.jpg) no-repeat center center fixed'
     bg.style.backgroundSize = 'cover'
     open.style.color = 'white'
 })
